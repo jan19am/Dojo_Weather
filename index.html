@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-links">
+            <h1 class = "test">Dojo Weather</h1>
+            <div class="cities" id="requests">
+                <p onclick="report(0)">Burbank</p>
+                <p onclick="report(1)">Chicago</p>
+                <p onclick="report(2)">Dallas</p>
+            </div>
+        </div>
+    </div>
+    <div class="city">
+        <div class="display">
+            <h2 class="city">San Jose</h2>
+            <p>show temperature in </p>
+            <select onchange="convert(this)" class="choose-temp">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+    </div>
+    <div class="weather">
+        <div class="content">
+            <div class="col">
+                <h3>Today</h3>
+                <img class="sky" src="assets/some_rain.png" alt="weather display">
+                <p>some rain</p>
+                <div class="degrees">
+                    <span id="degree1" class="left">24°</span>
+                    <span id="degree2" class="right">18°</span>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Tomorrow</h3>
+                <img class="sky" src="assets/some_sun.png" alt="weather display">
+                <p>some sun</p>
+                <div class="degrees">
+                    <span id="degree3" class="left">27°</span>
+                    <span id="degree4" class="right">19°</span>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Friday</h3>
+                <img class="sky" src="assets/some_clouds.png" alt="weather display">
+                <p>some clouds</p>
+                <div class="degrees">
+                    <span id="degree5" class="left">21°</span>
+                    <span id="degree6" class="right">16°</span>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Saturday</h3>
+                <img class="sky" src="assets/some_sun.png" alt="weather display">
+                <p>some sun</p>
+                <div class="degrees">
+                    <span id="degree7" class="left">26°</span>
+                    <span id="degree8" class="right">21°</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookies">
+        <div class="policy">
+            <img src="assets/cookie.png" alt="cookies">
+            <div class="policy-content">
+                <h4>Stop! Cookie Time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize <br>
+                content and ads, to provide social media features and to <br>
+                analyze our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button class="btn" onclick="hide()">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
